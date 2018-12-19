@@ -1,0 +1,119 @@
+body:before {
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+position: fixed;
+left: 0;
+top: 0;
+z-index: -10;
+background-image: url(https://images3.persgroep.net/rcs/eXMFHEt6Ko7KhBkxzMOm3mPRzgA/diocontent/112522493/_crop/0/988/1578/893/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left top;
+background-color: lightblue;
+
+}
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 2em 1em;
+}
+
+header h1 {
+    color: hsl(100, 0%, 100%);
+    font-family: Georgia, serif;
+    font-size: 3em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+nav {
+    background-color:hsl(100, 100%, 0%) ;
+    box-sizing: border-box;
+    font-size: .9em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-top: 1px solid white;
+    padding: .5em;
+}
+
+nav li:hover {
+    background-color: slateblue;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 2em;
+    min-height: 70vh;
+}
+
+article img {
+    max-width: 100%;
+}
+
+article ul, #hoofdvak ol {
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+article h1 {
+    color: black;
+}
+
+article h2 {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    box-sizing: border-box;
+    clear: both;
+    color: white;
+    font-size: .8em;
+    padding: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    nav ul, article {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 1em;
+    }
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+     }
+    nav ul li {
+        border-top: none;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+    nav li {
+        text-align: center;
+    }
+}
